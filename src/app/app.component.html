@@ -1,0 +1,10 @@
+<section class="d-flex">
+  <div
+  *ngFor="Let anime of animeList" class="card" style="width: 18rem;">
+  <img [src]="anime.images.jpg.image_url" class="card-img-top" alt="">
+  <div class="card-body">
+    <p class="card-text">{{anime.title}}</p>
+    <button (click)="saveData(anime.title)" class="btn btn-success">Save data</button>
+  </div>
+</div></section>
+<button (click)="deleteStorage()">Clear</button>
